@@ -1,0 +1,17 @@
+# Choosing a base image
+FROM node:14.15.4-alpine
+
+# copy your application files
+# to the /usr/app directory inside the container
+WORKDIR /usr/app
+COPY . .
+
+# install necessary packages
+RUN npm i
+
+# here we go
+ENV PORT 8080
+CMD [ "npm", "start" ]
+
+# docker build -t hello-html
+# docker run -p 8080:8080 --name hello-html-running hello-html

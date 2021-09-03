@@ -1,0 +1,14 @@
+# Select the base image
+FROM python:3
+
+# Install necessary packages
+ENV PYTHONUNBUFFERED=1
+WORKDIR /code
+COPY . /code/
+RUN pip install -r requirements.txt
+
+# Here we go
+CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
+
+# docker build -t hello-django
+# docker run -p 8000:8000 --name hello-django-running hello-django

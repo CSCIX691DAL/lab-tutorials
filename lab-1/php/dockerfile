@@ -1,0 +1,10 @@
+# Select your base image
+FROM php:7.4-apache
+
+# copy your application files
+# to the /usr/app directory inside the container
+WORKDIR /var/www/html
+COPY . .
+
+# $ docker build -t my-php-app .
+# $ docker run -d --name my-running-app my-php-app
