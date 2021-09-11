@@ -16,5 +16,5 @@ RUN npm run build
 # here we go
 CMD [ "npm", "start" ]
 
-# docker build -t hello-react
-# docker run -p 3000:3000 --name hello-react-running hello-react
+# docker build -t hello-react .
+# docker run -it --rm -p 3000:3000 --name hello-react-running hello-react
