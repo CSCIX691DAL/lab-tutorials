@@ -42,7 +42,7 @@ npm run build
 
 If everything goes well, you should see the same results after building your application:
 
-![image](https://user-images.githubusercontent.com/13452649/132540738-67d5970a-3af5-472b-8df6-d2eba7acc2ec.png)
+![image](https://user-images.githubusercontent.com/13452649/132951451-11c43b81-1fc0-4fac-a998-043cbc74992b.png)
 
 
 Now we are going to run our application and test it locally.
@@ -54,13 +54,13 @@ npm start
 
 By default, your project will be listening to port 3000. Here is an example of the correct execution of your application:
 
-![image](https://user-images.githubusercontent.com/13452649/132541097-a3746698-281b-42ba-9fdf-2d55bd130e26.png)
+![image](https://user-images.githubusercontent.com/13452649/132951472-048a84d4-6bd8-45fd-89a2-2a5b8737e2cf.png)
 
 
 Your application is running on http://localhost:3000
 Let's visit our application:
 
-![image](https://user-images.githubusercontent.com/13452649/132541151-51c14f2a-17b9-47e9-b135-d317e61995c7.png)
+![image](https://user-images.githubusercontent.com/13452649/132951489-86427b58-5cc1-4d5d-ab1a-f1c89a168476.png)
 
 
 Congratulations! You are running your app successfully in your local environment.
@@ -98,8 +98,7 @@ docker build -t hello-react .
 ```
 You should see output like the following
 
-![image](https://user-images.githubusercontent.com/13452649/132543086-e438c411-fbdc-459a-9773-28967b5a9c72.png)
-
+![image](https://user-images.githubusercontent.com/13452649/132951537-3d50d66d-ba66-4d0d-8c48-f3cce20aec58.png)
 
 **Step 3**: Run the docker image as a container. This step is something like executing your copiled C/Java program.
 
@@ -109,7 +108,8 @@ docker run -it --rm -p 3000:3000 --name hello-react-running hello-react
 
 The output is pretty like the one after running `npm start`.
 
-![image](https://user-images.githubusercontent.com/13452649/132543179-529a35b1-d95c-4fb1-9221-d9383a7caf59.png)
+![image](https://user-images.githubusercontent.com/13452649/132951550-4a57bbd7-92e8-4af3-899c-22eef5578a4e.png)
+
 
 You can see your app again on http://localhost:3000
 
