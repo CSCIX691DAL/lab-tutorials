@@ -13,5 +13,5 @@ RUN npm i
 ENV PORT 8080
 CMD [ "npm", "start" ]
 
-# docker build -t hello-html
+# docker build -t hello-html .
 # docker run -p 8080:8080 --name hello-html-running hello-html
