@@ -1,9 +1,0 @@
-{
-    "name": "csci-2690-html-template",
-    "dependencies": {
-        "http-server":"^13.0.1"
-    },
-    "scripts": {
-        "start": "http-server"
-    }
-}
