@@ -10,7 +10,7 @@ mkdir hello-html
 cd hello-html/
 ```
 
-**Step 4** - Add an HTML file.
+**Step 2** - Add an HTML file.
 
 Create a file named `index.html` and paste the following content there.
 
@@ -29,17 +29,7 @@ Create a file named `index.html` and paste the following content there.
 </html>
 ```
 
-**Step 5** - Let's test if our project working locally
-
-Open `hello-html` directory from your file explorer
-and double-click on `index.html`.
-You will see the following page in your browser.
-
-![image](https://user-images.githubusercontent.com/13452649/134737581-0cc63eee-6dbd-4cc5-8cc1-580eb1b9f982.png)
-
-Congratulations! You are running your app successfully in your local environment.
-
-# Dockerize The App
+# Dockerize And Run The App
 
 **Step 1**: Create a dockerfile
 Inside your project directory (`hello-docker`).
@@ -48,19 +38,12 @@ Create a new file named `Dockerfile`. Then paste the following content inside th
 
 ```dockerfile
 # Choosing a base image
-FROM node:14.15.4-alpine
+FROM httpd:2.4
 
-# copy your application files
-# to the /usr/app directory inside the container
-WORKDIR /usr/app
+# copy your application files to the
+# /usr/local/apache2/htdocs/ directory inside the container
+WORKDIR /usr/local/apache2/htdocs/
 COPY . .
-
-# install necessary packages
-RUN npm i
-
-# here we go
-ENV PORT 8080
-CMD [ "npm", "start" ]
 ```
 **Step 2**: Build the docker image. This step is something like compiling your C/Java code.
 
@@ -74,7 +57,7 @@ You should see output like the following
 **Step 3**: Run the docker image as a container. This step is something like executing your copiled C/Java program.
 
 ```sh
-docker run -it --rm -p 8080:8080 --name hello-html-running hello-html
+docker run -it --rm -p 80:80 --name hello-html-running hello-html
 ```
 You will see the following output.
 
