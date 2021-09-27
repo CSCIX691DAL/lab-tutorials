@@ -63,7 +63,7 @@ You will see the following output.
 
 ![image](https://user-images.githubusercontent.com/13452649/134738125-af782942-45d3-46c0-933f-6acc25a5c76b.png)
 
-You can see your app again on HTTP://localhost:8080
+You can see your app on HTTP://localhost
 
 > NB: Every time you make some changes inside the app, you need to restrart the docker container.
 > To do so, press `ctrl + C` to stop the container and run the command in **Step 3**.
