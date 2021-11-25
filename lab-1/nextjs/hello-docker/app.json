@@ -1,6 +1,6 @@
 {
   "name":"nextjs",
-  "options":{
+  "options": {
     "allow-unauthenticated":true,
     "memory":"256Mi",
     "cpu":"1",
